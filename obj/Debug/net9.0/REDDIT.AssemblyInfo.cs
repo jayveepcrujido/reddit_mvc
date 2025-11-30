@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("REDDIT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28d53e84dc8632bb39f5a6fbc3a5d25a05718d4a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2aad27b181557ed037468a3d4f565fd8c539c6c")]
 [assembly: System.Reflection.AssemblyProductAttribute("REDDIT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("REDDIT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
