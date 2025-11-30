@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jayvee\\Desktop\\REDDIT\\REDDIT.csproj": {}
+    "C:\\Users\\Arjohn\\OneDrive\\Desktop\\reddit_mvc\\REDDIT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jayvee\\Desktop\\REDDIT\\REDDIT.csproj": {
+    "C:\\Users\\Arjohn\\OneDrive\\Desktop\\reddit_mvc\\REDDIT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jayvee\\Desktop\\REDDIT\\REDDIT.csproj",
+        "projectUniqueName": "C:\\Users\\Arjohn\\OneDrive\\Desktop\\reddit_mvc\\REDDIT.csproj",
         "projectName": "REDDIT",
-        "projectPath": "C:\\Users\\Jayvee\\Desktop\\REDDIT\\REDDIT.csproj",
-        "packagesPath": "C:\\Users\\Jayvee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jayvee\\Desktop\\REDDIT\\obj\\",
+        "projectPath": "C:\\Users\\Arjohn\\OneDrive\\Desktop\\reddit_mvc\\REDDIT.csproj",
+        "packagesPath": "C:\\Users\\Arjohn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Arjohn\\OneDrive\\Desktop\\reddit_mvc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jayvee\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Arjohn\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -62,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

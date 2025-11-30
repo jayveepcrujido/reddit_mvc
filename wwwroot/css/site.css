@@ -80,3 +80,211 @@ body {
       font-size: 15px;        
       line-height: 1;         
   }
+
+      body {
+        background-color: #ffffff;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    }
+
+    .create-post-container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    .post-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    .post-header h1 {
+        font-size: 28px;
+        font-weight: 600;
+        color: #1c1c1c;
+        margin: 0;
+    }
+
+    .drafts-link {
+        color: #1c1c1c;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .community-input-wrapper {
+        display: flex;
+        align-items: center;
+        border: 2px solid #0079d3;
+        border-radius: 24px;
+        padding: 10px 16px;
+        background-color: #ffffff;
+        margin-bottom: 16px;
+        max-width: 300px;
+    }
+
+    .community-input-wrapper svg {
+        width: 20px;
+        height: 20px;
+        color: #7c7c7c;
+        margin-right: 10px;
+    }
+
+    .community-input {
+        border: none;
+        outline: none;
+        font-size: 14px;
+        color: #7c7c7c;
+        width: 100%;
+        background: transparent;
+    }
+
+    .post-tabs {
+        display: flex;
+        gap: 0;
+        border-bottom: 1px solid #edeff1;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .post-tab {
+        background: none;
+        border: none;
+        padding: 12px 20px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #1c1c1c;
+        cursor: pointer;
+        position: relative;
+        border-bottom: 3px solid transparent;
+    }
+
+    .post-tab.active {
+        color: #1c1c1c;
+        border-bottom-color: #0079d3;
+    }
+
+    .post-tab.disabled {
+        color: #c6c6c6;
+    }
+
+    .title-input {
+        width: 100%;
+        padding: 14px 16px;
+        border: 1px solid #cccccc;
+        border-radius: 24px;
+        font-size: 14px;
+        color: #1c1c1c;
+        outline: none;
+        background-color: #f6f7f8;
+        margin-bottom: 4px;
+    }
+
+    .title-input::placeholder {
+        color: #7c7c7c;
+    }
+
+    .char-count {
+        text-align: right;
+        font-size: 12px;
+        color: #7c7c7c;
+        margin-bottom: 12px;
+    }
+
+    .add-tags-btn {
+        background-color: #f6f7f8;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 16px;
+        font-size: 13px;
+        color: #a8a8a8;
+        cursor: pointer;
+        margin-bottom: 16px;
+    }
+
+    .editor-container {
+        border: 1px solid #cccccc;
+        border-radius: 24px;
+        background-color: #ffffff;
+        margin-bottom: 16px;
+        overflow: hidden;
+    }
+
+    .toolbar {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 10px 12px;
+        border-bottom: 1px solid #edeff1;
+        flex-wrap: wrap;
+        background-color: #ffffff;
+    }
+
+    .toolbar-btn {
+        background: none;
+        border: none;
+        padding: 4px 6px;
+        cursor: pointer;
+        color: #878a8c;
+        font-size: 18px;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 28px;
+        height: 28px;
+    }
+
+    .toolbar-btn svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .toolbar-btn.more {
+        margin-left: auto;
+    }
+
+    .body-textarea {
+        width: 100%;
+        min-height: 100px;
+        padding: 14px 16px;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        color: #1c1c1c;
+        resize: vertical;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    }
+
+    .body-textarea::placeholder {
+        color: #7c7c7c;
+    }
+
+    .form-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 8px;
+    }
+
+    .btn-draft {
+        background: #f6f7f8;
+        border: none;
+        padding: 8px 24px;
+        border-radius: 24px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #a8a8a8;
+        cursor: pointer;
+    }
+
+    .btn-post {
+        background-color: #f6f7f8;
+        border: none;
+        padding: 8px 24px;
+        border-radius: 24px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #a8a8a8;
+        cursor: not-allowed;
+    }
