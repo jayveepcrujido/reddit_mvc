@@ -1,8 +1,154 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container-fluid">
+    <div class="row">
+        <!-- Main Feed Section -->
+        <div class="col-lg-8 col-md-7">
+            <!-- Sort Options -->
+            <div class="sort-options mb-3">
+                <button class="btn btn-sm btn-outline-secondary dropdown-toggle me-2">Best</button>
+                <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                    <i class='bx bx-card'></i>
+                </button>
+            </div>
+
+            <!-- Post Card 1 -->
+            <div class="post-card">
+                <div class="post-header">
+                    <img src="https://via.placeholder.com/32" alt="avatar" class="post-avatar">
+                    <div class="post-meta">
+                        <span class="subreddit">r/shittymoviedetails</span>
+                        <span class="post-time">• 6 hr. ago</span>
+                    </div>
+                    <button class="btn btn-sm btn-link ms-auto">
+                        <i class='bx bx-dots-horizontal-rounded'></i>
+                    </button>
+                </div>
+                
+                <div class="nsfw-badge">NSFW</div>
+                
+                <h3 class="post-title">
+                    In an impressive feat of directorial skill Tarantino managed to direct "Once Upon A Time In Hollywood (2019)" using only one hand
+                </h3>
+                
+                <div class="post-image">
+                    <img src="https://via.placeholder.com/800x500" alt="Post image">
+                    <button class="image-nav-btn">
+                        <i class='bx bx-chevron-right'></i>
+                    </button>
+                    <div class="image-indicators">
+                        <span class="indicator active"></span>
+                        <span class="indicator"></span>
+                    </div>
+                </div>
+                
+                <div class="post-footer">
+                    <button class="post-action">
+                        <i class='bx bx-upvote'></i> 1.2k
+                    </button>
+                    <button class="post-action">
+                        <i class='bx bx-downvote'></i>
+                    </button>
+                    <button class="post-action">
+                        <i class='bx bx-comment'></i> 156 comments
+                    </button>
+                    <button class="post-action">
+                        <i class='bx bx-share'></i> Share
+                    </button>
+                    <button class="post-action">
+                        <i class='bx bx-bookmark'></i> Save
+                    </button>
+                </div>
+            </div>
+
+            <!-- Post Card 2 -->
+            <div class="post-card">
+                <div class="post-header">
+                    <img src="~\images\pfp.png" alt="avatar" class="post-avatar">
+                    <div class="post-meta">
+                        <span class="subreddit">r/AskReddit</span>
+                        <span class="post-time">• 3 hr. ago</span>
+                    </div>
+                    <button class="btn btn-sm btn-link ms-auto">
+                        <i class='bx bx-dots-horizontal-rounded'></i>
+                    </button>
+                </div>
+                
+                <h3 class="post-title">
+                    What's something that everyone agrees is annoying?
+                </h3>
+                
+                <div class="post-footer">
+                    <button class="post-action">
+                        <i class='bx bx-upvote'></i> 892
+                    </button>
+                    <button class="post-action">
+                        <i class='bx bx-downvote'></i>
+                    </button>
+                    <button class="post-action">
+                        <i class='bx bx-comment'></i> 423 comments
+                    </button>
+                    <button class="post-action">
+                        <i class='bx bx-share'></i> Share
+                    </button>
+                    <button class="post-action">
+                        <i class='bx bx-bookmark'></i> Save
+                    </button>
+                </div>
+            </div>
+
+            <!-- Add more post cards as needed -->
+        </div>
+
+        <!-- Sidebar - Recent Posts -->
+        <div class="col-lg-4 col-md-5">
+            <div class="sidebar-widget">
+                <div class="widget-header">
+                    <h5>RECENT POSTS</h5>
+                    <a href="#" class="clear-link">Clear</a>
+                </div>
+                
+                <div class="recent-post-item">
+                    <img src="https://via.placeholder.com/32" alt="avatar" class="recent-avatar">
+                    <div class="recent-content">
+                        <div class="recent-meta">
+                            <span class="subreddit-small">r/techsupport</span>
+                            <span class="time-small">• 3y ago</span>
+                        </div>
+                        <p class="recent-title">How do I move programs from my C drive to D drive without having to...</p>
+                        <div class="recent-stats">
+                            <span>38 upvotes</span>
+                            <span>• 26 comments</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recent-post-item">
+                    <img src="https://via.placeholder.com/32" alt="avatar" class="recent-avatar">
+                    <div class="recent-content">
+                        <div class="recent-meta">
+                            <span class="subreddit-small">r/identifythisfont</span>
+                            <span class="time-small">• 7y ago</span>
+                        </div>
+                        <p class="recent-title">What font does the reddit logo use?</p>
+                        <div class="recent-stats">
+                            <span>3 upvotes</span>
+                            <span>• 3 comments</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="sidebar-footer">
+                <a href="#">Reddit Rules</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">User Agreement</a>
+                <a href="#">Accessibility</a>
+                <p class="copyright">Reddit, Inc. © 2025. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
 </div>

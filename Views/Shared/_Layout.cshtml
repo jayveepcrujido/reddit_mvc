@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
-    <link href='https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 <header>
@@ -25,12 +25,13 @@
             <div class="container-fluid ">
                 <img class="logo" src="~/images/Reddit_Logo.png" asp-append-version="true" />
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">reddit</a>
-                <div class="d-flex justify-content-center flex-grow-1 px-3">
-                    <form class="form-inline w-100" style="max-width:600px; color:black;"> 
-                        <input class="form-control search-box" type="search" placeholder="Search Reddit" aria-label="Search">
-                        @*<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>*@
-                    </form>
-                </div>
+            <div class="d-flex justify-content-center flex-grow-1 px-3">
+                <form class="form-inline w-100 position-relative" style="max-width:600px; color:black;"> 
+                    <i class="bx bx-search search-icon"></i>
+                    <input class="form-control search-box" type="search" placeholder="Search Reddit" aria-label="Search">
+                </form>
+            </div>
+
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -59,11 +60,61 @@
         </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+<div class="container-fluid">
+        <div class="row">
+            <!-- Toggle Button - Always Visible -->
+            <button class="btn btn-light rounded-circle toggle-btn" type="button" id="sidebarToggle">
+                <i class='bx bx-menu'></i>
+            </button>
+            
+            <!-- Collapsible Sidebar -->
+            <nav id="sidebar" class="col-md-3 col-lg-2 sidebar">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                                <i class='bx bx-home'></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Popular">
+                                <i class='bx bx-arrow-in-up-right-circle'></i> Popular
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Answers">
+                                <i class='bx bx-webhook'></i> Answers
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Explore">
+                                <i class='bx bx-circles'></i> Explore
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">
+                                <i class='bx bx-bar-chart-square'></i> All
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">
+                                <i class='bx bx-plus'></i> Start a community
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main Content Area -->
+            <main role="main" class="col-md-9 ms-sm-auto col-lg-10 px-md-4 main-content">
+                <div class="pb-3">
+                    @RenderBody()
+                </div>
+            </main>
+        </div>
     </div>
+
+
 
     <footer class="border-top footer text-muted">
         <div class="container">
